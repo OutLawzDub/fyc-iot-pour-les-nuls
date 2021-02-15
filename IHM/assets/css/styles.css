@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #ecf0f1;
+}
+
+.fake_header {
+    position: absolute;
+    left: 0; right: 0;
+    top: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.8em;
+    text-indent: 5px;
+    color: black;
+    font-family: "Segoe UI Light";
+    font-weight: bold;
+    background: #ecf0f1;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, .01);
+}
+
+.fake_header > .icons {
+    position: relative;
+    float: right;
+    padding-right: 10px;
+    color: rgba(100, 100, 100, 1)
+}
+
+.boxe-answer {
+    position: absolute;
+    top: 30px; right: 0;
+    left: 0; bottom: 75px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+.boxe-answer > .answer {
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    margin-bottom: 15px;
+}
+
+.boxe-answer > .answer > div {
+    padding: 8px;
+    color: white;
+    display: inline-block;
+    font-family: "Segoe UI Light";
+    letter-spacing: -0.25px;
+    font-size: 0.9em;
+}
+
+.boxe-answer > .answer > .other {
+    position: relative;
+    max-width: 50%;
+    border-radius: 5px;
+    background: orange;
+    left: 0;
+    background: rgba(100, 100, 100, .4)
+}
+
+.boxe-answer > .answer > .me {
+    position: absolute;
+    max-width: 50%;
+    border-radius: 5px;
+    background: #686de0;
+    right: 0;
+}
+
+/* BOXE WRITE */
+
+.boxe-write {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    height: 75px;
+    border-top: 1px solid rgba(100, 100, 100, 1);
+    background: #686de0;
+}
+
+.boxe-write > input {
+    position: relative;
+    width: calc(100% - 20px);
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: none;
+    text-indent: 70px;
+    font-family: "Segoe UI Light";
+    font-size: 1em;
+    color: white;
+}
+
+.boxe-write > input::placeholder {
+    color: rgba(255, 255, 255, .50);
+}
+
+.boxe-write > .vocal {
+    position: absolute;
+    z-index: 5;
+    left: 10px;
+    top: 0; bottom: 0;
+    margin: auto;
+    height: 50px; width: 50px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.8em;
+    color: #686de0;
+    cursor: pointer;
+    transition: 0.5s all;
+    outline: none;
+}
+
+.boxe-write > .vocal[rec="true"] {
+    background: #ff7979 !important;
+    color: white;
+    transition: 0.5s all;
+}
+
+.boxe-write > .vocal:hover {
+    background: #868ae6;
+    transition: 0.5s all;
+    color: white;
+}
